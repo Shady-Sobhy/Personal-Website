@@ -1,0 +1,80 @@
+.contacts {
+  margin-top: 100px;
+  margin-bottom: 80px;
+  column-gap: 200px;
+}
+.contacts_email {
+  font-weight: var(--font-weight-bold);
+  text-decoration: underline;
+  margin-bottom: 24px;
+}
+.contacts_inputs {
+  margin-bottom: 50px;
+}
+.contacts_inputs input,
+.contacts_message textarea {
+  background-color: transparent;
+  border: 1px var(--color-input-border);
+  border-style: none none solid none;
+  padding: 5;
+}
+
+.contacts_inputs input:focus,
+.contacts_message textarea:focus {
+  outline: none;
+}
+.contacts_message textarea {
+  display: block;
+  width: 380px;
+  height: 40px;
+  padding: 5;
+}
+.contacts_btn {
+  border: 0;
+  background-color: var(--color-link-bg);
+  color: var(--color-white);
+  font-size: var(--font-size-24);
+  font-weight: var(--font-weight-semi-bold);
+  padding: 20px 20px;
+  margin-top: 40px;
+  position: relative;
+  transition: var(--transition-timing);
+}
+.contacts_btn:hover {
+  cursor: pointer;
+  background-color: rgba(41, 40, 40, 0.74);
+}
+.contacts_message {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts_links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contacts_btn {
+  align-self: flex-start;
+}
+.contacts_links_social a {
+  margin-right: 5px;
+}
+.contacts_links_social a:hover {
+  scale: 120%;
+}
+
+.contacts_links_social a {
+  transition: var(--transition-timing);
+}
+
+.input_name {
+  margin-right: 20px;
+}
+form:invalid::after {
+  content: "*";
+  font-size: 38px;
+  color: var(--color-red);
+}

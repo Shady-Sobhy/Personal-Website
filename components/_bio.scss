@@ -1,0 +1,81 @@
+.bio {
+  padding-top: 50px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.bio_image_content {
+  position: relative;
+  justify-self: center;
+}
+
+.bio_image {
+  width: 42.7rem;
+}
+.bio_arrow {
+  display: inline-block;
+  animation: jump 1s infinite alternate ease-in-out;
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0.5rem);
+  }
+  35% {
+    transform: translateY(-0.5rem);
+  }
+  70% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bio_paragraph,
+.project_paragraph,
+.contacts_links_paragraph {
+  font-family: var(--font-family-poppins);
+  font-weight: var(--font-weight-regular);
+  font-size: 24px;
+  margin: 36px 0;
+  line-height: 1.7;
+}
+.author {
+  font-weight: var(--font-weight-bold);
+}
+.link_almdrasa {
+  color: var(--color-green);
+}
+.link_facebook {
+  color: var(--color-dark-blue);
+}
+.link_twitter {
+  color: var(--color-light-blue);
+}
+.link_linkedin {
+  color: var(--color-darker-blue);
+}
+.link_youtube {
+  color: var(--color-red);
+}
+.say_hi_btn {
+  background-color: var(--color-link-bg);
+  color: var(--color-white);
+  font-size: var(--font-size-24);
+  font-weight: var(--font-weight-bold);
+  padding: 8px 42px;
+  transition: var(--transition-timing);
+}
+.say_hi_btn:hover {
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.473);
+  color: rgb(41, 41, 41);
+}
+.dwl_btn {
+  font-size: var(--font-size-24);
+  font-weight: var(--font-weight-semi-bold);
+  padding: 8px 16px;
+  transition: var(--transition-timing);
+}
+.dwl_btn:hover {
+  color: var(--color-green);
+}

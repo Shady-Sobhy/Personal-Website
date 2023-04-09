@@ -1,0 +1,15 @@
+footer p {
+  position: relative;
+  font-weight: var(--font-weight-semi-bold);
+  font-size: 14px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+
+.footer_border {
+  position: absolute;
+  left: calc(-50vw + 50%);
+  width: 100vw;
+  height: 1px;
+  background-color: var(--color-input-border);
+}

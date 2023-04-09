@@ -1,0 +1,25 @@
+/* Media */
+
+.media_video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 115px;
+  width: 1280px;
+}
+
+.video_loop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.08;
+  z-index: -1000;
+}
+.videos {
+  justify-self: center;
+  align-self: center;
+}
+
+/* End Media */
